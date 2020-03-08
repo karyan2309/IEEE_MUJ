@@ -889,6 +889,7 @@ h3 {
 /* line 14, ../../Arafath/CL/December/233. Startup/HTML/scss/_header.scss */
 .header-area .main-header-area {
   padding: 0 200px;
+  background-color: #1F1F1F;
 }
 
 @media (max-width: 767px) {
@@ -1066,6 +1067,61 @@ h3 {
   opacity: 1;
   visibility: visible;
   top: 100%;
+}
+
+/*------------------------*/
+
+.header-area .main-header-area .main-menu ul li .submenu2 {
+  position: absolute;
+  left: 100%;
+  background: rgb(255, 255, 255);
+  width: 207px;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
+  opacity: 0;
+  visibility: hidden;
+  text-align: left;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+}
+
+
+/* line 106, ../../Arafath/CL/December/233. Startup/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li .submenu2 li {
+  display: block;
+  color: #000;
+  margin: 0;
+}
+
+/* line 109, ../../Arafath/CL/December/233. Startup/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li .submenu2 li a {
+  padding: 10px 15px;
+  position: inherit;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  display: block;
+  color: #000;
+}
+
+/* line 115, ../../Arafath/CL/December/233. Startup/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li .submenu2 li a::before {
+  display: none;
+}
+
+/* line 119, ../../Arafath/CL/December/233. Startup/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li .submenu2 li:hover a {
+  color: #000;
+}
+
+/* line 124, ../../Arafath/CL/December/233. Startup/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li:hover > .submenu2 {
+  opacity: 1;
+  visibility: visible;
+  top: 0%;
 }
 
 /* line 129, ../../Arafath/CL/December/233. Startup/HTML/scss/_header.scss */
@@ -3280,7 +3336,7 @@ h3 {
 
 /* line 2, ../../Arafath/CL/December/233. Startup/HTML/scss/_team.scss */
 .team_area {
-  padding-top: 155px;
+  padding-top: 75px;
   padding-bottom: 122px;
 }
 
